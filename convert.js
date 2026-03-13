@@ -1,7 +1,4 @@
 /*!
-powerfullz 的 Substore 订阅转换脚本
-https://github.com/powerfullz/override-rules
-
 支持的传入参数：
 - loadbalance: 启用负载均衡（url-test/load-balance，默认 false）
 - landing: 启用落地节点功能（如机场家宽/星链/落地分组，默认 false）
@@ -205,7 +202,7 @@ const ruleProviders = {
         behavior: "classical",
         format: "text",
         interval: 86400,
-        url: "https://gcore.jsdelivr.net/gh/powerfullz/override-rules@master/ruleset/TikTok.list",
+        url: "https://gcore.jsdelivr.net/gh/hbin/override-rules@master/ruleset/TikTok.list",
         path: "./ruleset/TikTok.list",
     },
     EHentai: {
@@ -213,7 +210,7 @@ const ruleProviders = {
         behavior: "classical",
         format: "text",
         interval: 86400,
-        url: "https://gcore.jsdelivr.net/gh/powerfullz/override-rules@master/ruleset/EHentai.list",
+        url: "https://gcore.jsdelivr.net/gh/hbin/override-rules@master/ruleset/EHentai.list",
         path: "./ruleset/EHentai.list",
     },
     SteamFix: {
@@ -221,7 +218,7 @@ const ruleProviders = {
         behavior: "classical",
         format: "text",
         interval: 86400,
-        url: "https://gcore.jsdelivr.net/gh/powerfullz/override-rules@master/ruleset/SteamFix.list",
+        url: "https://gcore.jsdelivr.net/gh/hbin/override-rules@master/ruleset/SteamFix.list",
         path: "./ruleset/SteamFix.list",
     },
     GoogleFCM: {
@@ -229,7 +226,7 @@ const ruleProviders = {
         behavior: "classical",
         format: "text",
         interval: 86400,
-        url: "https://gcore.jsdelivr.net/gh/powerfullz/override-rules@master/ruleset/FirebaseCloudMessaging.list",
+        url: "https://gcore.jsdelivr.net/gh/hbin/override-rules@master/ruleset/FirebaseCloudMessaging.list",
         path: "./ruleset/FirebaseCloudMessaging.list",
     },
     AdditionalFilter: {
@@ -237,7 +234,7 @@ const ruleProviders = {
         behavior: "classical",
         format: "text",
         interval: 86400,
-        url: "https://gcore.jsdelivr.net/gh/powerfullz/override-rules@master/ruleset/AdditionalFilter.list",
+        url: "https://gcore.jsdelivr.net/gh/hbin/override-rules@master/ruleset/AdditionalFilter.list",
         path: "./ruleset/AdditionalFilter.list",
     },
     AdditionalCDNResources: {
@@ -245,7 +242,7 @@ const ruleProviders = {
         behavior: "classical",
         format: "text",
         interval: 86400,
-        url: "https://gcore.jsdelivr.net/gh/powerfullz/override-rules@master/ruleset/AdditionalCDNResources.list",
+        url: "https://gcore.jsdelivr.net/gh/hbin/override-rules@master/ruleset/AdditionalCDNResources.list",
         path: "./ruleset/AdditionalCDNResources.list",
     },
     Crypto: {
@@ -253,7 +250,7 @@ const ruleProviders = {
         behavior: "classical",
         format: "text",
         interval: 86400,
-        url: "https://gcore.jsdelivr.net/gh/powerfullz/override-rules@master/ruleset/Crypto.list",
+        url: "https://gcore.jsdelivr.net/gh/hbin/override-rules@master/ruleset/Crypto.list",
         path: "./ruleset/Crypto.list",
     },
 };
@@ -679,7 +676,7 @@ function buildProxyGroups({
         },
         {
             name: "AI",
-            icon: "https://gcore.jsdelivr.net/gh/powerfullz/override-rules@master/icons/chatgpt.png",
+            icon: "https://gcore.jsdelivr.net/gh/hbin/override-rules@master/icons/chatgpt.png",
             type: "select",
             proxies: defaultProxies,
         },
@@ -691,13 +688,13 @@ function buildProxyGroups({
         },
         {
             name: "Google",
-            icon: "https://gcore.jsdelivr.net/gh/powerfullz/override-rules@master/icons/Google.png",
+            icon: "https://gcore.jsdelivr.net/gh/hbin/override-rules@master/icons/Google.png",
             type: "select",
             proxies: defaultProxies,
         },
         {
             name: "Microsoft",
-            icon: "https://gcore.jsdelivr.net/gh/powerfullz/override-rules@master/icons/Microsoft_Copilot.png",
+            icon: "https://gcore.jsdelivr.net/gh/hbin/override-rules@master/icons/Microsoft_Copilot.png",
             type: "select",
             proxies: defaultProxies,
         },
@@ -744,7 +741,7 @@ function buildProxyGroups({
         },
         {
             name: "E-Hentai",
-            icon: "https://gcore.jsdelivr.net/gh/powerfullz/override-rules@master/icons/Ehentai.png",
+            icon: "https://gcore.jsdelivr.net/gh/hbin/override-rules@master/icons/Ehentai.png",
             type: "select",
             proxies: defaultProxies,
         },
@@ -756,7 +753,7 @@ function buildProxyGroups({
         },
         {
             name: "Truth Social",
-            icon: "https://gcore.jsdelivr.net/gh/powerfullz/override-rules@master/icons/TruthSocial.png",
+            icon: "https://gcore.jsdelivr.net/gh/hbin/override-rules@master/icons/TruthSocial.png",
             type: "select",
             proxies: hasUS
                 ? ["美国节点", PROXY_GROUPS.SELECT, PROXY_GROUPS.MANUAL]
@@ -764,13 +761,13 @@ function buildProxyGroups({
         },
         {
             name: "OneDrive",
-            icon: "https://gcore.jsdelivr.net/gh/powerfullz/override-rules@master/icons/Onedrive.png",
+            icon: "https://gcore.jsdelivr.net/gh/hbin/override-rules@master/icons/Onedrive.png",
             type: "select",
             proxies: defaultProxies,
         },
         {
             name: "PikPak",
-            icon: "https://gcore.jsdelivr.net/gh/powerfullz/override-rules@master/icons/PikPak.png",
+            icon: "https://gcore.jsdelivr.net/gh/hbin/override-rules@master/icons/PikPak.png",
             type: "select",
             proxies: defaultProxies,
         },
@@ -782,7 +779,7 @@ function buildProxyGroups({
         },
         {
             name: "搜狗输入法",
-            icon: "https://gcore.jsdelivr.net/gh/powerfullz/override-rules@master/icons/Sougou.png",
+            icon: "https://gcore.jsdelivr.net/gh/hbin/override-rules@master/icons/Sougou.png",
             type: "select",
             proxies: [PROXY_GROUPS.DIRECT, "REJECT"],
         },
